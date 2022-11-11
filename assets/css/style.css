@@ -1,7 +1,7 @@
 /* Base Styles CSS Start */
 
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
 
 @font-face {
   font-family: grifter;
@@ -15,6 +15,7 @@
 
 *,
 body {
+  font-family: "Plus Jakarta Sans", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -128,6 +129,23 @@ nav {
   padding: 0 80px;
 }
 
+.logo {
+  max-width: 200px;
+  width: 100%;
+}
+
+.logo a {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  line-height: 33px;
+  color: #000000;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
 .menu ul {
   display: flex;
   align-items: center;
@@ -237,11 +255,7 @@ a.nav-btn {
 /* Hero Section HTML Start */
 
 section#Hero {
-  padding-top: 100px;
-}
-
-.hero-content {
-  padding-top: 120px;
+  padding: 200px 0 80px;
 }
 
 .hero-content h1 {
@@ -262,20 +276,25 @@ section#Hero {
   margin-bottom: 45px;
 }
 
+.hero-btn a {
+  padding: 18px 55px;
+}
+
 .hero-content span {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #6d6d6d;
 }
 
-.company-logo {
-  position: absolute;
-  width: 40%;
-  background: white;
-  bottom: 20px;
+/* Hero Section HTML End */
+
+/* Company Section CSS Start */
+
+.company-logo-wrapper img {
+  width: 100px;
 }
 
-/* Hero Section HTML End */
+/* Company Section CSS End */
 
 /* Header Part CSS End */
 
@@ -427,13 +446,27 @@ section#Hero {
   left: 10%;
 }
 
-.services-box li {
-  font-size: 22px;
-  font-weight: 700;
-  color: #000000;
-  padding: 30px 0 10px;
-  list-style: none;
-  border-bottom: 4px solid #dae3ed;
+.services-card {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.services-card-img {
+  padding: 20px;
+}
+
+.services-card-img img {
+  border-radius: 15px;
+}
+
+.services-card h4 {
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+.services-card p {
+  font-size: 20px;
+  line-height: 150.8%;
 }
 
 /* Services Section CSS End */
@@ -637,6 +670,10 @@ section#Hero {
   .work-main::before {
     left: 60px;
   }
+  .subscription-plan-wrapper {
+    width: 1100px;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -646,12 +683,6 @@ section#Hero {
   .hero-content h1 {
     font-size: 42px;
     line-height: 60px;
-  }
-  .company-logo {
-    width: 50%;
-  }
-  .company-logo img {
-    width: 20%;
   }
   .hire-card,
   .work-card,
@@ -668,6 +699,7 @@ section#Hero {
   .work-card h5,
   .staging-content h5,
   .manage-content h5,
+  .services-card h4,
   .subcription-top h4 {
     font-size: 22px;
   }
@@ -692,21 +724,25 @@ section#Hero {
     line-height: 50px;
   }
 
-  .company-logo {
-    width: 55%;
-    bottom: 10px;
-  }
-  .company-logo img {
-    width: 15%;
-  }
-
   .hire-card h5,
   .benefit-card h5,
   .work-card h5,
   .staging-content h5,
   .manage-content h5,
+  .services-card h4,
   .subcription-top h4 {
     font-size: 20px;
+  }
+
+  .services-card {
+    padding: 0 30px;
+  }
+
+  .services-card-img {
+    padding: 10px;
+  }
+  .services-card p {
+    font-size: 18px;
   }
   .pricing h2 {
     font-size: 28px;
@@ -741,14 +777,13 @@ section#Hero {
     margin-top: 35px;
     margin-bottom: 35px;
   }
-  .company-logo {
-    display: none;
-  }
+
   .hire-card h5,
   .benefit-card h5,
   .work-card h5,
   .staging-content h5,
   .manage-content h5,
+  .services-card h4,
   .subcription-top h4 {
     font-size: 20px;
   }
@@ -757,12 +792,11 @@ section#Hero {
     padding: 30px 0 60px;
   }
 
-  .services-box li {
-    font-size: 18px;
+  .services-card {
+    padding: 0 20px;
   }
-
-  .services-box li img {
-    max-width: 12%;
+  .services-card p {
+    font-size: 16px;
   }
 
   .pricing h2 {
@@ -790,10 +824,6 @@ section#Hero {
     display: none;
   }
 
-  .company-logo {
-    display: none;
-  }
-
   .badge {
     font-size: 25px;
   }
@@ -804,6 +834,10 @@ section#Hero {
   .faq-badge {
     top: -18px;
     left: 0;
+  }
+
+  section#Hero {
+    padding: 100px 0 80px;
   }
 
   .work-main {
@@ -861,6 +895,7 @@ section#Hero {
   .work-card h5,
   .staging-content h5,
   .manage-content h5,
+  .services-card h4,
   .subcription-top h4 {
     font-size: 20px;
   }
@@ -869,12 +904,11 @@ section#Hero {
     padding: 30px 10px 60px;
   }
 
-  .services-box li {
-    font-size: 18px;
+  .services-card {
+    padding: 0 20px;
   }
-
-  .services-box li img {
-    max-width: 12%;
+  .services-card p {
+    font-size: 16px;
   }
 
   .pricing h2 {
