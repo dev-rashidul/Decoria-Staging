@@ -100,8 +100,8 @@ p.section-desc {
   width: 100%;
   height: 100%;
   background: #c9c9c9;
-  left: 10px;
-  top: 10px;
+  left: 7px;
+  top: 7px;
   border-radius: 8px;
   z-index: -1;
 }
@@ -160,6 +160,11 @@ nav {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
+}
+
+.menu ul li a.active {
+  font-weight: 700;
+  color: #10ab8d;
 }
 
 a.nav-btn {
@@ -933,3 +938,177 @@ section#Hero {
 }
 
 /* Responsive CSS End */
+
+/* =============***============
+=============***============
+
+Portfolio Page CSS
+
+=============***============
+=============***============ */
+
+/* Portfolio Hero Section CSS Start */
+
+.portfolio-hero-wrapper {
+  padding: 150px 0 80px;
+}
+
+.portfolio-hero-content {
+  text-align: center;
+}
+
+.portfolio-hero-content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: center;
+  color: #000000;
+}
+
+.portfolio-hero-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #383838;
+  padding-top: 5px;
+}
+
+/* Main Portfolio Section CSS Start */
+
+.main-portfolio-wrapper {
+  padding: 100px 0;
+}
+
+.coloring-bg {
+  background: #dae4ec;
+}
+
+.portfolio-main-top {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.portfolio-main-top h2 {
+  font-size: 36px;
+  color: #000000;
+}
+
+.portfolio-main-top p {
+  font-size: 20px;
+  color: #000000;
+}
+
+.portfolio-before,
+.portfolio-after {
+  padding: 0 10px;
+}
+
+.portfolio-before img,
+.portfolio-after img {
+  border-radius: 10px;
+}
+
+.before-badge {
+  position: absolute;
+  top: 26%;
+  left: 12%;
+}
+
+.before-badge .badge,
+.after-badge .badge {
+  font-family: Raph Lanok Future;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.055em;
+  color: #10ab8d;
+  transform: rotate(-31.55deg);
+}
+
+.after-badge {
+  position: absolute;
+  top: 26%;
+  right: 12%;
+}
+
+.after-badge .badge {
+  transform: rotate(31.55deg);
+}
+
+/* Main Portfolio Section CSS End */
+
+/* Portfolio Trial CSS Start */
+
+.portfolio-trial-content {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.portfolio-trial-content h2 {
+  font-size: 36px;
+  color: #000000;
+}
+
+.portfolio-trial-content p {
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Portfolio Trial CSS End */
+
+/* Portfolio Page Responsive CSS */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .portfolio-hero-content h1 {
+    font-size: 60px;
+  }
+  .before-badge {
+    top: 29%;
+    left: 2%;
+  }
+  .after-badge {
+    top: 29%;
+    right: 2%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-hero-content h1 {
+    font-size: 55px;
+  }
+  .before-badge .badge,
+  .after-badge .badge {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio-hero-content h1 {
+    font-size: 50px;
+  }
+  .before-badge .badge,
+  .after-badge .badge {
+    font-size: 25px;
+  }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+  .portfolio-hero-content h1 {
+    font-size: 50px;
+  }
+  .portfolio-main-top h2,
+  .portfolio-trial-content h2 {
+    font-size: 30px;
+  }
+  .before-badge {
+    top: 25%;
+    left: -5%;
+  }
+  .after-badge {
+    top: 60%;
+    right: -5%;
+  }
+  .before-badge .badge,
+  .after-badge .badge {
+    font-size: 25px;
+  }
+
+  .portfolio-after {
+    padding-top: 50px;
+  }
+}
