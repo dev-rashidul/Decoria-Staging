@@ -1,0 +1,901 @@
+/* Base Styles CSS Start */
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: grifter;
+  src: url(../font/grifterbold.otf);
+}
+
+@font-face {
+  font-family: Raph Lanok Future;
+  src: url(../font/RaphLanokFuture.otf);
+}
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: grifter;
+}
+
+p,
+a,
+li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+ol,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-spacing {
+  padding: 100px 0;
+}
+
+.section-top {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+h2.section-title {
+  font-size: 56px;
+  color: #000000;
+}
+
+p.section-desc {
+  font-size: 22px;
+  color: #000000;
+  padding-top: 5px;
+}
+
+.badge {
+  font-family: Raph Lanok Future;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.055em;
+  color: #10ab8d;
+  transform: rotate(-31.55deg);
+}
+
+/* Button Style */
+
+.primary-btn a {
+  position: relative;
+  background: #000000;
+  color: #ffffff;
+  font-family: grifter;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 35px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.primary-btn a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #c9c9c9;
+  left: 10px;
+  top: 10px;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/* Base Styles CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 47px rgba(60, 60, 60, 0.12);
+  padding: 12px 0;
+  z-index: 999;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 0 15px;
+  list-style: none;
+}
+
+.menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+a.nav-btn {
+  background: #000000;
+  color: #ffffff !important;
+  padding: 9px 22px;
+  border-radius: 4px;
+}
+
+.nav-toggler {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggler span {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  display: block;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.nav-toggler.active span {
+  background: #ffffff;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  transition: all 0.3s ease;
+}
+
+.nav-toggler span::before {
+  transform: translateY(-6px);
+}
+
+.nav-toggler span::after {
+  transform: translateY(6px);
+}
+
+.nav-toggler.active span::before {
+  transform: rotate(45deg);
+}
+
+.nav-toggler.active span::after {
+  transform: rotate(135deg);
+}
+
+@media (max-width: 992px) {
+  .nav-toggler {
+    display: block;
+  }
+  .nav-wrapper {
+    justify-content: space-between;
+    padding: 0;
+  }
+  .menu {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+  .menu.active {
+    visibility: visible;
+  }
+  .menu ul {
+    display: block;
+    margin-top: 20px;
+    padding-left: 0 !important;
+    border-top: 1px solid #dddddd;
+  }
+  .menu ul li {
+    margin-left: 0;
+    padding: 15px 0;
+  }
+}
+
+/* Navigation Section CSS Start */
+
+/* Hero Section HTML Start */
+
+section#Hero {
+  padding-top: 100px;
+}
+
+.hero-content {
+  padding-top: 120px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #000000;
+}
+.hero-content p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #383838;
+  padding-top: 5px;
+}
+
+.hero-btn {
+  margin-top: 55px;
+  margin-bottom: 45px;
+}
+
+.hero-content span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #6d6d6d;
+}
+
+.company-logo {
+  position: absolute;
+  width: 40%;
+  background: white;
+  bottom: 20px;
+}
+
+/* Hero Section HTML End */
+
+/* Header Part CSS End */
+
+/* Hire Me Section HTML Start */
+
+.hire-wrapper {
+  background: #dae4ec;
+}
+
+.hire-card img {
+  max-width: 50%;
+  width: 100%;
+}
+
+.hire-card h5 {
+  font-size: 25px;
+}
+
+.hire-card p {
+  font-size: 20px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+/* Hire Me Section HTML End */
+
+/* Benefits Section HTML Start */
+
+.benefit-badge {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+}
+
+.benefit-card img {
+  max-width: 50%;
+  width: 100%;
+}
+
+.benefit-card h5 {
+  font-size: 25px;
+}
+
+.benefit-card p {
+  font-size: 20px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+/* Benefits Section HTML End */
+
+/* Staging Section CSS Start */
+
+.staging-wrapper,
+.manage-wrapper {
+  background: #dae4ec;
+}
+
+.staging-badge,
+.manage-badge {
+  position: absolute;
+  top: -30px;
+  right: 10%;
+}
+
+.staging-badge .badge,
+.manage-badge .badge {
+  transform: rotate(31deg);
+}
+
+.staging-content h5,
+.manage-content h5 {
+  font-size: 25px;
+  padding: 5px 0;
+}
+
+.staging-content p,
+.manage-content p {
+  font-size: 20px;
+}
+
+/* Staging Section CSS End */
+
+/* Works Section CSS Start */
+
+.work-badge {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+}
+
+.work-card img {
+  max-width: 50%;
+  width: 100%;
+}
+
+.work-card h5 {
+  font-size: 25px;
+}
+
+.work-card p {
+  font-size: 20px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.work-main {
+  margin-top: 60px;
+}
+
+.work-main::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  text-align: center;
+  height: 3px;
+  background: #10ab8d;
+  left: 35px;
+  top: -55px;
+}
+
+.work-card span {
+  position: absolute;
+  display: block;
+  font-family: "grifter";
+  font-size: 26px;
+  color: #ffffff;
+  background: #10ab8d;
+  top: -78px;
+  width: 45px;
+  height: 45px;
+  padding: 4px 0;
+  text-align: center;
+  border-radius: 50px;
+}
+
+/* Works Section CSS End */
+
+/* Services Section CSS Start */
+
+.servics-main {
+  border: 5px solid #dae3ed;
+  padding: 30px 20px 60px;
+}
+
+.services-badge {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+}
+
+.services-box li {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  padding: 30px 0 10px;
+  list-style: none;
+  border-bottom: 4px solid #dae3ed;
+}
+
+/* Services Section CSS End */
+
+/* Subscription Section CSS Start */
+
+.subscription-wrapper {
+  background: #dae4ec;
+}
+
+.subscription-badge {
+  position: absolute;
+  top: -30px;
+  right: 10%;
+}
+
+.subscription-badge .badge {
+  transform: rotate(31deg);
+}
+
+.subscription-plan {
+  background: #ffffff;
+  border-right: 2px solid #dae4ec;
+}
+
+.subcription-top {
+  padding: 40px 30px;
+  border-bottom: 2px solid #dae4ec;
+}
+
+.subscription-time {
+  height: 100px;
+}
+
+.subcription-top h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.subcription-top p {
+  font-size: 20px;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.pricing p {
+  font-size: 18px;
+  color: #5c5c5c;
+}
+.sub-btn {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.sub-btn a {
+  padding: 15px 50px;
+}
+
+.faq-btn a {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.subcription-bottom {
+  padding: 40px 30px;
+}
+
+.subcription-bottom h5 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.subcription-bottom ul li {
+  font-size: 18px;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+/* Subscription Section CSS End */
+
+/* FAQ Section CSS Start */
+
+.faq-content {
+  padding: 0 80px;
+}
+
+.faq-badge {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+}
+
+.accordion-item {
+  border-left: none;
+  border-right: none;
+  border-color: #000000;
+}
+
+.accordion-body {
+  padding: 10px 0;
+}
+
+.accordion-item:first-child {
+  border-top: none;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 20px 0;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button {
+  color: #000000;
+  background: transparent;
+  box-shadow: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 20px 0;
+}
+
+.view-faq-btn {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* FAQ Section CSS End */
+
+/* Footer Section CSS Start */
+
+.footer-wrapper {
+  background: #000000;
+  padding: 60px 0;
+}
+
+.footer-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-company img {
+  max-width: 18%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.footer-menu ul {
+  padding: 0;
+}
+
+.footer-menu ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.footer-menu ul li a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footer-copy p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-copy span {
+  font-size: 18px;
+  color: #909090;
+}
+
+/* Footer Section CSS End */
+
+/* Responsive CSS Start */
+
+@media (min-width: 1600px) {
+  .hire-card,
+  .work-card,
+  .benefit-card {
+    padding: 0 40px;
+  }
+
+  .work-main::before {
+    left: 60px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  h2.section-title {
+    font-size: 48px;
+  }
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 60px;
+  }
+  .company-logo {
+    width: 50%;
+  }
+  .company-logo img {
+    width: 20%;
+  }
+  .hire-card,
+  .work-card,
+  .benefit-card {
+    padding: 0 40px;
+  }
+
+  .work-main::before {
+    left: 60px;
+  }
+
+  .hire-card h5,
+  .benefit-card h5,
+  .work-card h5,
+  .staging-content h5,
+  .manage-content h5,
+  .subcription-top h4 {
+    font-size: 22px;
+  }
+  .footer-company img {
+    max-width: 17%;
+  }
+  p {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2.section-title {
+    font-size: 42px;
+  }
+
+  .hero-content {
+    padding-top: 100px;
+  }
+  .hero-content h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .company-logo {
+    width: 55%;
+    bottom: 10px;
+  }
+  .company-logo img {
+    width: 15%;
+  }
+
+  .hire-card h5,
+  .benefit-card h5,
+  .work-card h5,
+  .staging-content h5,
+  .manage-content h5,
+  .subcription-top h4 {
+    font-size: 20px;
+  }
+  .pricing h2 {
+    font-size: 28px;
+  }
+
+  .footer-company img {
+    max-width: 17%;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h2.section-title {
+    font-size: 36px;
+  }
+
+  .badge {
+    font-size: 28px;
+  }
+
+  .hero-content {
+    padding-top: 40px;
+  }
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .hero-btn {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .company-logo {
+    display: none;
+  }
+  .hire-card h5,
+  .benefit-card h5,
+  .work-card h5,
+  .staging-content h5,
+  .manage-content h5,
+  .subcription-top h4 {
+    font-size: 20px;
+  }
+
+  .servics-main {
+    padding: 30px 0 60px;
+  }
+
+  .services-box li {
+    font-size: 18px;
+  }
+
+  .services-box li img {
+    max-width: 12%;
+  }
+
+  .pricing h2 {
+    font-size: 25px;
+  }
+
+  .faq-content {
+    padding: 0px;
+  }
+
+  .footer-company img {
+    max-width: 17%;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+  h2.section-title {
+    font-size: 32px;
+  }
+
+  p.section-desc br {
+    display: none;
+  }
+
+  .company-logo {
+    display: none;
+  }
+
+  .badge {
+    font-size: 25px;
+  }
+
+  .benefit-badge,
+  .work-badge,
+  .services-badge,
+  .faq-badge {
+    top: -18px;
+    left: 0;
+  }
+
+  .work-main {
+    margin-top: -40px;
+  }
+
+  .work-main::before {
+    width: 3px;
+    height: 90%;
+    left: 25px;
+    top: 50px;
+  }
+
+  .work-card span {
+    position: relative;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    top: 32px;
+    left: -55px;
+  }
+
+  .work-card {
+    padding-left: 50px;
+  }
+
+  .staging-badge,
+  .manage-badge,
+  .subscription-badge {
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
+
+  .hero-content {
+    padding-top: 40px;
+  }
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .hero-btn {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .hire-card,
+  .benefit-card {
+    padding: 0 25px;
+  }
+
+  .hire-card h5,
+  .benefit-card h5,
+  .work-card h5,
+  .staging-content h5,
+  .manage-content h5,
+  .subcription-top h4 {
+    font-size: 20px;
+  }
+
+  .servics-main {
+    padding: 30px 10px 60px;
+  }
+
+  .services-box li {
+    font-size: 18px;
+  }
+
+  .services-box li img {
+    max-width: 12%;
+  }
+
+  .pricing h2 {
+    font-size: 25px;
+  }
+
+  .faq-content {
+    padding: 0px;
+  }
+
+  .footer-company img {
+    max-width: 30%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+}
+
+/* Responsive CSS End */
