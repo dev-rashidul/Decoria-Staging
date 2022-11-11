@@ -260,7 +260,7 @@ a.nav-btn {
 /* Hero Section HTML Start */
 
 section#Hero {
-  padding: 200px 0 80px;
+  padding: 200px 0 60px;
 }
 
 .hero-content h1 {
@@ -296,7 +296,7 @@ section#Hero {
 /* Company Section CSS Start */
 
 .company-logo-wrapper img {
-  width: 100px;
+  width: 160px;
 }
 
 /* Company Section CSS End */
@@ -661,6 +661,15 @@ section#Hero {
   color: #909090;
 }
 
+.footer-copy a {
+  font-family: "Plus Jakarta Sans";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 152%;
+  text-decoration-line: underline;
+  color: #10ab8d;
+}
+
 /* Footer Section CSS End */
 
 /* Responsive CSS Start */
@@ -689,6 +698,11 @@ section#Hero {
     font-size: 42px;
     line-height: 60px;
   }
+
+  .company-logo-wrapper img {
+    width: 150px;
+  }
+
   .hire-card,
   .work-card,
   .benefit-card {
@@ -727,6 +741,10 @@ section#Hero {
   .hero-content h1 {
     font-size: 36px;
     line-height: 50px;
+  }
+
+  .company-logo-wrapper img {
+    width: 120px;
   }
 
   .hire-card h5,
@@ -781,6 +799,10 @@ section#Hero {
   .hero-btn {
     margin-top: 35px;
     margin-bottom: 35px;
+  }
+
+  .company-logo-wrapper img {
+    width: 99px;
   }
 
   .hire-card h5,
@@ -842,7 +864,11 @@ section#Hero {
   }
 
   section#Hero {
-    padding: 100px 0 80px;
+    padding: 100px 0 60px;
+  }
+
+  .company-logo-wrapper img {
+    width: 100px;
   }
 
   .work-main {
