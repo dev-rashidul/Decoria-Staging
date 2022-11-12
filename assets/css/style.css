@@ -313,7 +313,7 @@ section#Hero {
 }
 
 .hire-card img {
-  max-width: 50%;
+  max-width: 40%;
   width: 100%;
 }
 
@@ -338,7 +338,7 @@ section#Hero {
 }
 
 .benefit-card img {
-  max-width: 50%;
+  max-width: 40%;
   width: 100%;
 }
 
@@ -460,7 +460,16 @@ section#Hero {
 }
 
 .portfolio-btn a {
+  position: relative;
   margin: auto;
+}
+
+.portfolio-btn a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: red;
 }
 
 .services-card-img {
