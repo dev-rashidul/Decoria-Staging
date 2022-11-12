@@ -499,6 +499,10 @@ section#Hero {
   transform: rotate(31deg);
 }
 
+.subscription-plan-wrapper .col-md-6 {
+  background: #ffffff;
+}
+
 .subscription-plan {
   background: #ffffff;
   border-right: 2px solid #dae4ec;
@@ -531,13 +535,36 @@ section#Hero {
   font-size: 18px;
   color: #5c5c5c;
 }
+
 .sub-btn {
+  display: block;
+  width: 310px;
+  position: relative;
+  background: #000000;
   margin-top: 20px;
   margin-bottom: 40px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.sub-btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #c9c9c9;
+  left: 7px;
+  top: 7px;
+  border-radius: 8px;
+  z-index: -1;
 }
 
 .sub-btn a {
-  padding: 15px 50px;
+  color: #ffffff;
+  font-family: grifter;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .faq-btn a {
