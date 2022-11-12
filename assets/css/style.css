@@ -536,18 +536,19 @@ section#Hero {
   color: #5c5c5c;
 }
 
-.sub-btn {
+.sub-btn,
+.portfolio-btn {
   display: block;
   width: 310px;
   position: relative;
   background: #000000;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px auto 40px;
   border-radius: 8px;
   z-index: 10;
 }
 
-.sub-btn::after {
+.sub-btn::after,
+.portfolio-btn::after {
   position: absolute;
   content: "";
   width: 100%;
