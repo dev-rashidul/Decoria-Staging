@@ -460,16 +460,7 @@ section#Hero {
 }
 
 .portfolio-btn a {
-  position: relative;
   margin: auto;
-}
-
-.portfolio-btn a::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: red;
 }
 
 .services-card-img {
@@ -737,6 +728,17 @@ section#Hero {
   .services-card h4,
   .subcription-top h4 {
     font-size: 22px;
+  }
+  .staging-badge,
+  .manage-badge,
+  .subscription-badge {
+    right: 5%;
+  }
+  .benefit-badge,
+  .work-badge,
+  .services-badge,
+  .faq-badge {
+    left: 5%;
   }
   .footer-company img {
     max-width: 17%;
