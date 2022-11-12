@@ -691,6 +691,13 @@ section#Hero {
   .work-main::before {
     left: 60px;
   }
+  .staging-img {
+    text-align: center;
+  }
+  .staging-img img {
+    max-width: 83%;
+    margin: auto;
+  }
   .subscription-plan-wrapper {
     width: 1100px;
     margin: auto;
