@@ -84,7 +84,7 @@ p.section-desc {
 
 .primary-btn a {
   display: block;
-  width: 310px;
+  width: 250px;
   position: relative;
   background: #000000;
   color: #ffffff;
@@ -94,6 +94,11 @@ p.section-desc {
   text-align: center;
   padding: 15px 35px;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn a:hover {
+  color: #10ab8d;
 }
 
 .primary-btn a::after {
@@ -163,6 +168,12 @@ nav {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover,
+a.nav-btn:hover {
+  color: #10ab8d !important;
 }
 
 .menu ul li a.active {
@@ -175,6 +186,7 @@ a.nav-btn {
   color: #ffffff !important;
   padding: 9px 22px;
   border-radius: 4px;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-toggler {
@@ -281,7 +293,7 @@ section#Hero {
 
 .hero-btn {
   margin-top: 55px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .hero-btn a {
@@ -289,7 +301,7 @@ section#Hero {
 }
 
 .hero-content span {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   color: #6d6d6d;
 }
@@ -350,6 +362,25 @@ section#Hero {
   font-size: 20px;
   padding-top: 10px;
   margin: 0;
+}
+
+.label {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  background: #10ab8d;
+  padding: 13px 20px;
+  border-radius: 7px;
+  transform: rotate(28deg);
+}
+
+.label p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
 }
 
 /* Benefits Section HTML End */
@@ -508,6 +539,26 @@ section#Hero {
   border-right: 2px solid #dae4ec;
 }
 
+.pricing-label {
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  background: #10ab8d;
+  padding: 14px 20px;
+  border-radius: 7px;
+  transform: rotate(28deg);
+}
+
+.pricing-label p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
 .subcription-top {
   padding: 40px 30px;
   border-bottom: 2px solid #dae4ec;
@@ -539,7 +590,7 @@ section#Hero {
 .sub-btn,
 .portfolio-btn {
   display: block;
-  width: 310px;
+  width: 250px;
   position: relative;
   background: #000000;
   margin: 20px auto 40px;
@@ -575,6 +626,11 @@ section#Hero {
   color: #000000;
   text-align: center;
   text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-btn a:hover {
+  color: #10ab8d;
 }
 
 .subcription-bottom {
@@ -684,6 +740,11 @@ section#Hero {
 .footer-menu ul li a {
   color: #ffffff;
   font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-menu ul li a:hover {
+  color: #10ab8d;
 }
 
 .footer-copy p {
