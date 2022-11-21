@@ -1367,3 +1367,222 @@ Contact Page CSS
     row-gap: 20px;
   }
 }
+
+/* ============***===========
+============***===========
+Free Trial Page CSS
+============***===========
+============***=========== */
+
+.trial-wrapper {
+  padding: 150px 0 200px;
+}
+
+.trial-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(218, 228, 236, 0) 0%,
+    #dae4ec 76.35%
+  );
+  z-index: -1;
+}
+
+.trial-top h2 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: center;
+  color: #000000;
+}
+
+.trial-top p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #383838;
+  padding-top: 5px;
+}
+
+.trial-form {
+  max-width: 800px;
+  margin: auto;
+}
+
+.form-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  padding-top: 20px;
+}
+
+.form-group label,
+.textarea label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.textarea textarea {
+  width: 100%;
+  outline: none;
+  border: 3px solid #000000;
+  border-radius: 6px;
+  padding: 13px 25px;
+}
+
+.form-group select {
+  color: #8e8e8e;
+}
+
+.form-group select option {
+  font-size: 18px;
+}
+
+.form-group a {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  color: #10ab8d;
+  margin: 0;
+}
+
+.contact-btn a {
+  width: 220px !important;
+  padding: 15px 0 !important;
+  margin: auto;
+}
+
+.contact-form ::placeholder {
+  color: #8e8e8e;
+}
+
+.file-upload {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #000000;
+  border-radius: 6px;
+}
+
+input.file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+#toolTip {
+  position: relative;
+}
+
+#toolTip img {
+  cursor: pointer;
+}
+
+#tooltipText {
+  position: absolute;
+  top: -157px;
+  left: -85px;
+  width: 400px;
+  font-size: 17px;
+  background: #dae4ec;
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#tooltipText::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 20%;
+  transform: translate(-20%);
+  border-bottom: 22px solid #dae4ec;
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
+  transform: rotate(180deg);
+}
+
+#toolTip:hover #tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Contact Page Responsive CSS */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .trial-top h2 {
+    font-size: 60px;
+  }
+
+  #tooltipText {
+    top: -181px;
+    left: -63px;
+    width: 300px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .trial-top h2 {
+    font-size: 55px;
+  }
+
+  #tooltipText {
+    top: -155px;
+    left: -260px;
+    width: 365px;
+  }
+
+  #tooltipText::before {
+    top: 100%;
+    left: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .trial-top h2 {
+    font-size: 50px;
+  }
+
+  #tooltipText {
+    top: -155px;
+    left: -260px;
+    width: 365px;
+  }
+
+  #tooltipText::before {
+    top: 100%;
+    left: 70%;
+  }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+  .trial-top h2 {
+    font-size: 50px;
+  }
+
+  .form-top {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+
+  #tooltipText {
+    top: -157px;
+    left: -300px;
+    width: 335px;
+  }
+
+  #tooltipText::before {
+    top: 100%;
+    left: 89%;
+  }
+}
