@@ -1261,3 +1261,95 @@ Portfolio Page CSS
     padding-top: 50px;
   }
 }
+
+/* ============***===========
+============***===========
+Contact Page CSS
+============***===========
+============***=========== */
+
+.contact-wrapper {
+  padding: 150px 0;
+}
+
+.contact-top h2 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: center;
+  color: #000000;
+}
+
+.contact-top p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #383838;
+  padding-top: 5px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  padding-top: 20px;
+}
+
+.form-group label,
+.textarea label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.form-group input,
+.textarea textarea {
+  width: 100%;
+  outline: none;
+  border: 3px solid #000000;
+  border-radius: 7px;
+  padding: 14px 25px;
+}
+
+.contact-btn {
+  width: 250px;
+  margin: auto;
+}
+
+.contact-form ::placeholder {
+  color: #8e8e8e;
+}
+
+/* Contact Page Responsive CSS */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .contact-top h2 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-top h2 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-top h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+  .contact-top h2 {
+    font-size: 50px;
+  }
+
+  .form-top {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+}
