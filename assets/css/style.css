@@ -1269,7 +1269,7 @@ Contact Page CSS
 ============***=========== */
 
 .contact-wrapper {
-  padding: 150px 0;
+  padding: 150px 0 200px;
 }
 
 .contact-wrapper::after {
