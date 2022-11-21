@@ -1289,7 +1289,7 @@ Contact Page CSS
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
 }
 
@@ -1313,8 +1313,8 @@ Contact Page CSS
   width: 100%;
   outline: none;
   border: 3px solid #000000;
-  border-radius: 7px;
-  padding: 14px 25px;
+  border-radius: 6px;
+  padding: 13px 25px;
 }
 
 .contact-btn {
