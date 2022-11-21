@@ -1272,6 +1272,20 @@ Contact Page CSS
   padding: 150px 0;
 }
 
+.contact-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(218, 228, 236, 0) 0%,
+    #dae4ec 76.35%
+  );
+  z-index: -1;
+}
+
 .contact-top h2 {
   font-size: 70px;
   font-weight: 700;
@@ -1317,8 +1331,8 @@ Contact Page CSS
   padding: 13px 25px;
 }
 
-.contact-btn {
-  width: 250px;
+.contact-btn a {
+  width: 220px !important;
   margin: auto;
 }
 
