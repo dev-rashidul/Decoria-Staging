@@ -311,7 +311,8 @@ section#Hero {
 /* Company Section CSS Start */
 
 .company-logo-wrapper img {
-  width: 160px;
+  width: 140px;
+  height: 120px;
 }
 
 /* Company Section CSS End */
@@ -366,16 +367,16 @@ section#Hero {
 
 .label {
   position: absolute;
-  top: 90px;
-  right: 48px;
+  top: 100px;
+  right: 60px;
   background: #10ab8d;
-  padding: 8px 13px;
+  padding: 5px 10px;
   border-radius: 7px;
   transform: rotate(28deg);
 }
 
 .label p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 23px;
   text-align: center;
@@ -474,6 +475,10 @@ section#Hero {
 
 /* Services Section CSS Start */
 
+.services-wrapper .section-top {
+  padding-bottom: 10px;
+}
+
 .servics-main {
   border: 5px solid #dae3ed;
   padding: 30px 20px 60px;
@@ -541,16 +546,16 @@ section#Hero {
 
 .pricing-label {
   position: absolute;
-  top: 15px;
-  right: -20px;
+  top: 10px;
+  right: -30px;
   background: #10ab8d;
-  padding: 10px 15px;
+  padding: 7px 12px;
   border-radius: 7px;
   transform: rotate(28deg);
 }
 
 .pricing-label p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 23px;
   text-align: center;
@@ -845,8 +850,8 @@ section#Hero {
   .footer-company img {
     max-width: 17%;
   }
-  p {
-    font-size: 18px !important;
+  .portfolio-hero-content p {
+    font-size: 22px !important;
   }
 }
 
@@ -991,7 +996,8 @@ section#Hero {
   }
 
   .company-logo-wrapper img {
-    width: 100px;
+    width: 85px;
+    height: 70px;
   }
 
   .work-main {
@@ -1115,7 +1121,7 @@ Portfolio Page CSS
 }
 
 .portfolio-hero-content p {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   color: #383838;
   padding-top: 5px;
@@ -1295,7 +1301,7 @@ Contact Page CSS
 }
 
 .contact-top p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   color: #383838;
@@ -1401,7 +1407,7 @@ Free Trial Page CSS
 }
 
 .trial-top p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   color: #383838;
@@ -1417,7 +1423,7 @@ Free Trial Page CSS
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .form-group label,
@@ -1492,9 +1498,9 @@ input.file {
 
 #tooltipText {
   position: absolute;
-  top: -157px;
-  left: -85px;
-  width: 400px;
+  top: -135px;
+  left: -56px;
+  width: 415px;
   font-size: 17px;
   background: #dae4ec;
   padding: 15px;
@@ -1507,7 +1513,7 @@ input.file {
   position: absolute;
   content: "";
   top: 100%;
-  left: 20%;
+  left: 12%;
   transform: translate(-20%);
   border-bottom: 22px solid #dae4ec;
   border-right: 18px solid transparent;
@@ -1528,9 +1534,14 @@ input.file {
   }
 
   #tooltipText {
-    top: -181px;
-    left: -63px;
-    width: 300px;
+    top: -130px;
+    left: -119px;
+    width: 415px;
+  }
+
+  #tooltipText::before {
+    top: 100%;
+    left: 27%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {

@@ -72,8 +72,8 @@
               <form>
                 <div class="form-top">
                   <div class="form-group">
-                    <label>Your name*</label>
-                    <input type="text" placeholder="Full name" required />
+                    <label>Full name*</label>
+                    <input type="text" placeholder="John Doe" required />
                   </div>
                   <div class="form-group">
                     <div
@@ -99,9 +99,18 @@
                   <div class="form-group">
                     <label>Requested service*</label>
                     <select>
-                      <option value="Select a service">Select a service</option>
-                      <option value="Select a service">Select a service</option>
-                      <option value="Select a service">Select a service</option>
+                      <option value="Select a services" selected>
+                        Select a services
+                      </option>
+                      <option value="Image enhancement">
+                        Image enhancement
+                      </option>
+                      <option value="Virtual staging">Virtual staging</option>
+                      <option value="Virtual renovation">
+                        Virtual renovation
+                      </option>
+                      <option value="Objects removal">Objects removal</option>
+                      <option value="Lawn enhancement">Lawn enhancement</option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -112,9 +121,18 @@
                       <a href="#">View catalog</a>
                     </div>
                     <select>
-                      <option value="Select a style">Select a style</option>
-                      <option value="Select a style">Select a style</option>
-                      <option value="Select a style">Select a style</option>
+                      <option value="Select a style" selected>
+                        Select a style
+                      </option>
+                      <option value="Modern">Modern</option>
+                      <option value="Contemporary">Contemporary</option>
+                      <option value="Scandinavian">Scandinavian</option>
+                      <option value="Farmhouse">Farmhouse</option>
+                      <option value="Hamptons">Hamptons</option>
+                      <option value="Urban industrial">Urban industrial</option>
+                      <option value="Traditional">Traditional</option>
+                      <option value="Neoclassical">Neoclassical</option>
+                      <option value="Other">Other</option>
                     </select>
                   </div>
                 </div>
@@ -124,14 +142,14 @@
                     <input type="file" class="file" required />
                     <img src="assets/images/upload.png" alt="upload" />
                     <h5>Upload a file</h5>
-                    <p>Drag and drop files here...</p>
+                    <p>Drag and drop files here.</p>
                   </div>
                 </div>
                 <div class="textarea mt-4">
                   <label>Additional instructions (optional)</label>
                   <textarea
                     rows="3"
-                    placeholder="Tell us more about your project..."
+                    placeholder="Tell us more about your project."
                   ></textarea>
                 </div>
                 <div class="primary-btn contact-btn mt-4">
