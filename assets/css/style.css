@@ -545,12 +545,12 @@ section#Hero {
 
 .pricing-label {
   position: absolute;
-  top: 10px;
-  right: -30px;
+  top: 32px;
+  right: -65px;
   background: #10ab8d;
-  padding: 7px 12px;
+  padding: 7px 64px;
   border-radius: 7px;
-  transform: rotate(28deg);
+  transform: rotate(40deg);
 }
 
 .pricing-label p {
@@ -775,14 +775,14 @@ section#Hero {
 
 /* Responsive CSS Start */
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) and (max-width: 1920px) {
   .hire-card,
   .work-card,
   .benefit-card {
     padding: 0 40px;
   }
   .hero-img {
-    margin-left: -30px;
+    margin-top: 25px !important;
   }
 
   .work-main::before {
@@ -1059,6 +1059,11 @@ section#Hero {
     font-size: 20px;
   }
 
+  .label {
+    top: 80px;
+    right: 45px;
+  }
+
   .servics-main {
     padding: 30px 10px 60px;
   }
@@ -1209,6 +1214,15 @@ Portfolio Page CSS
 /* Portfolio Trial CSS End */
 
 /* Portfolio Page Responsive CSS */
+
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .before-badge {
+    left: 3%;
+  }
+  .after-badge {
+    right: 3%;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .portfolio-hero-content h1 {
