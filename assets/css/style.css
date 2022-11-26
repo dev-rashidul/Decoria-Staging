@@ -1090,14 +1090,6 @@ section#Hero {
     right: 35px;
   }
 
-  .staging-content {
-    text-align: center;
-  }
-
-  .manage-content {
-    text-align: center;
-  }
-
   .servics-main {
     padding: 30px 10px 60px;
   }
@@ -1115,6 +1107,11 @@ section#Hero {
 
   .faq-content {
     padding: 0px;
+  }
+
+  .faq-btn a {
+    display: block;
+    margin-top: 25px;
   }
 
   .footer-company img {
