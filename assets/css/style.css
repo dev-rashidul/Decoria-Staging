@@ -1050,14 +1050,20 @@ section#Hero {
     line-height: 40px;
   }
 
-  .primary-btn a {
+  .primary-btn a,
+  .sub-btn,
+  .portfolio-btn {
     width: 220px;
     margin: auto;
   }
 
+  .hero-content span {
+    font-size: 10px;
+  }
+
   .hero-btn {
     margin-top: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 
   .hero-btn a {
@@ -1080,7 +1086,7 @@ section#Hero {
   }
 
   .label {
-    top: 125px;
+    top: 120px;
     right: 35px;
   }
 
@@ -1121,6 +1127,13 @@ section#Hero {
 
   p {
     font-size: 18px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 375px) {
+  .label {
+    top: 110px;
+    right: 15px;
   }
 }
 
