@@ -1079,6 +1079,14 @@ section#Hero {
     right: 20px;
   }
 
+  .staging-content {
+    text-align: center;
+  }
+
+  .manage-content {
+    text-align: center;
+  }
+
   .servics-main {
     padding: 30px 10px 60px;
   }
