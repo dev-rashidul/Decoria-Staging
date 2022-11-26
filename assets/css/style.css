@@ -366,12 +366,11 @@ section#Hero {
 
 .label {
   position: absolute;
-  top: 100px;
-  right: 60px;
+  top: 128px;
+  right: 37px;
   background: #10ab8d;
-  padding: 5px 10px;
+  padding: 3px 10px;
   border-radius: 7px;
-  transform: rotate(28deg);
 }
 
 .label p {
@@ -1060,8 +1059,8 @@ section#Hero {
   }
 
   .label {
-    top: 80px;
-    right: 45px;
+    top: 112px;
+    right: 20px;
   }
 
   .servics-main {
@@ -1168,7 +1167,7 @@ Portfolio Page CSS
 
 .before-badge {
   position: absolute;
-  top: 26%;
+  top: 25%;
   left: 12%;
 }
 
@@ -1215,7 +1214,7 @@ Portfolio Page CSS
 
 /* Portfolio Page Responsive CSS */
 
-@media (min-width: 1400px) and (max-width: 1920px) {
+@media (min-width: 1400px) and (max-width: 1919px) {
   .before-badge {
     left: 3%;
   }
