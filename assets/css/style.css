@@ -374,7 +374,7 @@ section#Hero {
 }
 
 .label p {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 23px;
   text-align: center;
@@ -1121,10 +1121,6 @@ section#Hero {
   .footer-content {
     flex-direction: column;
   }
-
-  p {
-    font-size: 18px !important;
-  }
 }
 
 @media (min-width: 300px) and (max-width: 375px) {
@@ -1260,7 +1256,7 @@ Portfolio Page CSS
   }
   .after-badge {
     right: 2%;
-    top: 25%;
+    top: 26%;
   }
 }
 
