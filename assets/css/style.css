@@ -1306,20 +1306,22 @@ Portfolio Page CSS
   .portfolio-trial-content h2 {
     font-size: 30px;
   }
+
   .portfolio-main-top {
     padding-bottom: 70px;
   }
+
   .before-badge {
-    top: 23%;
-    left: 10px;
+    top: 24%;
+    left: -15px;
+    padding-top: 20px;
   }
   .after-badge {
-    top: 59%;
-    right: 10px;
+    top: 61%;
+    right: -10px;
   }
   .before-badge .badge,
   .after-badge .badge {
-    transform: rotate(0deg);
     font-size: 25px;
   }
 
