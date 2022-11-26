@@ -1126,7 +1126,7 @@ section#Hero {
 @media (min-width: 300px) and (max-width: 375px) {
   .label {
     top: 110px;
-    right: 15px;
+    right: 20px;
   }
 }
 
