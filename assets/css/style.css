@@ -1051,12 +1051,17 @@ section#Hero {
   }
 
   .primary-btn a {
+    width: 220px;
     margin: auto;
   }
 
   .hero-btn {
     margin-top: 35px;
     margin-bottom: 35px;
+  }
+
+  .hero-btn a {
+    padding: 15px 10px !important;
   }
 
   .hire-card,
