@@ -784,6 +784,18 @@ section#Hero {
     margin-top: 25px !important;
   }
 
+  .staging-badge,
+  .manage-badge,
+  .subscription-badge {
+    right: 3%;
+  }
+  .benefit-badge,
+  .work-badge,
+  .services-badge,
+  .faq-badge {
+    left: 3%;
+  }
+
   .work-main::before {
     left: 60px;
   }
@@ -968,7 +980,7 @@ section#Hero {
     font-size: 18px !important;
   }
 }
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   h2.section-title {
     font-size: 32px;
   }
@@ -994,8 +1006,7 @@ section#Hero {
   }
 
   .company-logo-wrapper img {
-    width: 85px;
-    height: 70px;
+    width: 100px;
   }
 
   .work-main {
@@ -1031,11 +1042,16 @@ section#Hero {
   }
 
   .hero-content {
+    text-align: center;
     padding-top: 40px;
   }
   .hero-content h1 {
     font-size: 28px;
     line-height: 40px;
+  }
+
+  .primary-btn a {
+    margin: auto;
   }
 
   .hero-btn {
@@ -1216,10 +1232,12 @@ Portfolio Page CSS
 
 @media (min-width: 1400px) and (max-width: 1919px) {
   .before-badge {
-    left: 3%;
+    left: 2%;
+    top: 26%;
   }
   .after-badge {
-    right: 3%;
+    right: 2%;
+    top: 25%;
   }
 }
 
@@ -1254,7 +1272,7 @@ Portfolio Page CSS
     font-size: 25px;
   }
 }
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .portfolio-hero-content h1 {
     font-size: 50px;
   }
@@ -1375,7 +1393,7 @@ Contact Page CSS
     font-size: 50px;
   }
 }
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .contact-top h2 {
     font-size: 50px;
   }
@@ -1588,7 +1606,7 @@ input.file {
     left: 70%;
   }
 }
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .trial-top h2 {
     font-size: 50px;
   }
