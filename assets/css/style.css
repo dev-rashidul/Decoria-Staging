@@ -1303,6 +1303,10 @@ Portfolio Page CSS
     font-size: 30px;
   }
 
+  .portfolio-main-top p {
+    font-size: 18px;
+  }
+
   .portfolio-main-top {
     padding-bottom: 70px;
   }
